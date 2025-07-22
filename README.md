@@ -1,0 +1,2 @@
+# Next.js Project Setup and Basics.
+This project is focused on setting up and understanding the basics of a Next.js application. It covers initial configuration, essential concepts, and foundational steps for building web applications using the Next.js framework.
