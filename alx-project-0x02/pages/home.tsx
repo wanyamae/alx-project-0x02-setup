@@ -1,6 +1,6 @@
 import Header from '@/components/layout/Header';
 import Card from '@/components/common/Card';
-import { cardProps, cardData } from '@/interfaces';
+import { CardProps, cardData } from '@/interfaces';
 import Link from 'next/link';
 
 const HomePage: React.FC = () => {

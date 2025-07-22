@@ -1,6 +1,6 @@
-import { cardProps } from '@/interfaces';
+import { CardProps } from '@/interfaces';
 
-const Card: React.FC<cardProps> = ({ title, content }) => {
+const Card: React.FC<CardProps> = ({ title, content }) => {
     return (
         <div className="border rounded-lg p-4 shadow-md bg-cyan-500">
             <h2 className="text-xl font-bold mb-2">{title}</h2>
