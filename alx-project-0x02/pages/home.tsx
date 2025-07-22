@@ -1,4 +1,6 @@
 import Header from '@/components/layout/Header';
+import Card from '@/components/common/Card';
+import { CardProps } from '@/interfaces';
 import Link from 'next/link';
 
 const HomePage: React.FC = () => {
@@ -10,6 +12,8 @@ const HomePage: React.FC = () => {
             <Link href="/about" className="px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
                 Go to About Page
             </Link>
+
+            <Card title="Sample Card" content="This is a sample card component." />
         </div>
 
     )

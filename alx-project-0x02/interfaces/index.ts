@@ -1,5 +1,5 @@
-export interface User {
-  id: number;
-  name: string;
-  email: string;
+export interface CardProps {
+  id?: number;
+  title: string;
+  content: string;
 }
