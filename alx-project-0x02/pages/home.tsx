@@ -1,6 +1,6 @@
 import Header from '@/components/layout/Header';
 import Card from '@/components/common/Card';
-import { CardProps } from '@/interfaces';
+import { cardProps, cardData } from '@/interfaces';
 import Link from 'next/link';
 
 const HomePage: React.FC = () => {
@@ -13,7 +13,12 @@ const HomePage: React.FC = () => {
                 Go to About Page
             </Link>
 
-            <Card title="Sample Card" content="This is a sample card component." />
+            <div className = "grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                {cardData.map((card, idx) => (
+                    <Card key={idx} title={card.title} content={card.content} />
+                ))}
+            </div>
+
         </div>
 
     )
