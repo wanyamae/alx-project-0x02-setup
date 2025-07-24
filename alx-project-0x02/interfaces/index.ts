@@ -4,6 +4,11 @@ export interface CardProps {
   content: string;
   className?: string;
 }
+export interface PostModalProps {
+  onAddPost: (post: { title: string; content: string}) => void;
+}
+
+
 
 export const cardData: CardProps[] = [
   { id: 1, title: 'Card 1', content: 'This is the content of card 1.' },

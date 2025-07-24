@@ -1,8 +1,6 @@
 import { useState } from "react";
+import { PostModalProps } from "@/interfaces";
 
-interface PostModalProps {
-  onAddPost: (post: { title: string; content: string }) => void;
-}
 
 function PostModal({ onAddPost }: PostModalProps) {
   const [modalOpen, setModalOpen] = useState(false);
