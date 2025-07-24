@@ -2,6 +2,7 @@ export interface CardProps {
   id?: number;
   title: string;
   content: string;
+  className?: string;
 }
 
 export const cardData: CardProps[] = [
