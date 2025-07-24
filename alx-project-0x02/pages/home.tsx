@@ -14,8 +14,12 @@ const HomePage: React.FC = () => {
             </Link>
 
             <div className = "grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                {cardData.map((card, idx) => (
-                    <Card key={idx} title={card.title} content={card.content} />
+                {cardData.map((card: CardProps, idx: number) => (
+                    <Card
+                        key={card.id || idx}
+                        title={card.title}
+                        content={card.content}
+                    />
                 ))}
             </div>
 
