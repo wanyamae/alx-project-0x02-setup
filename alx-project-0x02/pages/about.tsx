@@ -1,15 +1,15 @@
 import Header from '@/components/layout/Header';
 import Link from 'next/link';
-import ButtonComponent from '@/components/common/Button';
+import Button from '@/components/common/Button';
 
 const AboutPage: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-blue-200">
             <Header />
             <div className="grid items-center gap-6">
-                <ButtonComponent size="small" shape="rounded-sm">Small</ButtonComponent>
-                <ButtonComponent size="medium" shape="rounded-md">Medium</ButtonComponent>
-                <ButtonComponent size="large" shape="rounded-full">Large</ButtonComponent>
+                <Button size="small" shape="rounded-sm">Small</Button>
+                <Button size="medium" shape="rounded-md">Medium</Button>
+                <Button size="large" shape="rounded-full">Large</Button>
             </div>
             <h1 className="text-4xl font-bold text-white mb-4">About Us</h1>
             <p className="text-lg text-gray-200 mb-8">This page contains information about our application.</p>

@@ -12,7 +12,7 @@ const shapeClasses = {
     'rounded-full': 'rounded-full',
 };
 
-const ButtonComponent: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>> =({
+const Button: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>> =({
     size = 'medium',
     shape = 'rounded-md',
     children,
@@ -27,4 +27,4 @@ const ButtonComponent: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLBut
     </button>
 );
 
-export default ButtonComponent;
+export default Button;
