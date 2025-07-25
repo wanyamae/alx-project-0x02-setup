@@ -13,6 +13,12 @@ export interface ButtonProps {
   shape?: 'rounded-sm' | 'rounded-md' | 'rounded-full';
 }
 
+export interface PostProps {
+  userId: number;
+  title: string;
+  content: string;
+  className?: string;
+}
 
 
 export const cardData: CardProps[] = [
